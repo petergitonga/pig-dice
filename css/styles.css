@@ -1,0 +1,89 @@
+.container{
+  width: auto;
+  object-fit: cover;
+  text-align: center;
+  font-style: italic;
+}
+.jumbotron{
+  background-image: url("../img/landing.jpg");
+  margin-bottom: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#drink1{
+  float: right;
+  width: auto;
+}
+.navbar{
+  text-align: center;
+  font-size: 36px;
+}
+.orange{
+  background-color: #F15A29;
+  text-align: center;
+}
+.happy-hour{
+  font-size: 48px;
+}
+.party-time{
+  background-color: #F15A29;
+  font-size: 48px;
+}
+.breakfast{
+
+}
+.lunch{
+
+}
+.dinner{
+}
+body{
+  background-size: cover;
+}
+.well{
+  background-image: url("../img/foodsBg.jpg");
+}
+h1{
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+h3{
+  font-style: italic;
+}
+.subscribe{
+  background-image: url("../img/subscribe.jpg");
+  background-size: cover;
+  font-size: 20px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: #F15A29;
+}
+.subscribe p{
+  color: white;
+  font-family: sans-serif;
+}
+button{
+  background-color: #F15A29;
+}
+h2{
+  font-size: 36px;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  padding-top: -10px;
+}
+.test-box{
+  border: 2px;
+  padding: 6px;
+  margin: 20px;
+}
+.modo{
+  
+}
