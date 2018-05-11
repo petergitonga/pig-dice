@@ -1,0 +1,20 @@
+body{
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  margin: auto;
+}
+.home{
+  padding-top: 20%;
+  font-size: 52px;
+}
+.play:hover{
+  opacity: 0.5;
+  transition: all 1s ease;
+
+  transform: scale(1.2,1.2);
+  -webkit-transform:scale(1.2,1.2);
+  -ms-transform:scale(1.2,1.2);
+  -moz-transform:scale();
+  -o-transform:scale();
+
+}
