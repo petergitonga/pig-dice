@@ -2,10 +2,15 @@ body{
   text-align: center;
   font-family: 'Caveat', cursive;
   margin: auto;
+  color: gold;
+  background: url("../images/mess.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 .home{
   padding-top: 20%;
-  font-size: 52px;
+  font-size: 100px;
+
 }
 .play:hover{
   opacity: 0.5;
@@ -17,4 +22,30 @@ body{
   -moz-transform:scale();
   -o-transform:scale();
 
+}
+.rules{
+  text-align: left;
+  font-size: 24px;
+}
+.game{
+  font-size: 45px;
+}
+img{
+  height: 75px;
+  width: 75px;
+  transition: all 1s ease;
+
+  transform: scale(1.2,1.2);
+  -webkit-transform:scale(1.2,1.2);
+  -ms-transform:scale(1.2,1.2);
+  -moz-transform:scale();
+  -o-transform:scale();
+}
+h1{
+  font-size: 50px;
+}
+#back{
+  background: url("../images/pexels.jpeg");
+  background-repeat: no-repeat;
+  background-size:cover;
 }

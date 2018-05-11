@@ -1,5 +1,5 @@
 <!DOCTYPE.html>
-<html>
+<html lang="en">
   <head>
     <title>PIG DICE</title>
     <link href="css/bootstrap.css" rel ="stylesheet" type="text/css">
@@ -8,9 +8,42 @@
     <script src="js/scripts.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
   </head>
-  <body>
-    <div class="container">
-      
-    </div>
-  </body>
+    <body>
+      <div id="back">
+        <div class="container">
+            <div class="row">
+              <div class="rules">
+                  <h2>RULES and GAMEPLAY</h2>
+                  <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</p>
+                  <ul>
+                    <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+                    <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+                    <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+                    <p>The first player to score 100 or more points wins.</p>
+                  </ul>
+                </div>
+              </div>
+            <div class="game">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6">
+                    <button class="player1"><span class="bald">Player1:</span><span id="plyer1"></span></button>
+                  </div>
+                  <div class="col-md-6">
+                    <button class="player2"><span class="bald">Player2:</span><span id="plyer2"></span></button>
+                  </div>
+                </div>
+              </div>
+              <p>Your score:<span id="total"></span></p>
+              <p>Dice:<span id="rolling"></span></p>
+              <form id="rolls">
+                <button  class="rollbtton" id="roll"><img src="images/spin.gif"></button>
+              </form>
+              <form id="end">
+                <button class="hldbtton" id="hold"><img src="images/hold.gif"></button>
+              </form>
+            </div>
+          </div>
+      </div>    
+    </body>
 </html>
