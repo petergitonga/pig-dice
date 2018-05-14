@@ -11,6 +11,20 @@ function Turn(player) {
     this.player = player;
 };
 
+Turn.prototype.endTurn = function(player1, player2) {
+    this.player.score += this.total;
+    this.total = 0;
+    this.randNumber = 0;
+    if (this.player == player1) {
+        this.player = player2;
+        $("#player2").toggleClass("active");
+        $("#player1").toggleClass("active");
+    } else if (this.player == player2) {
+        this.player = player1;
+        $("#player2").toggleClass("active");
+        $("#player1").toggleClass("active");
+    };
+};
 Turn.prototype.diceRolling = function(player1, player2) {
     var randNumber = Math.floor(Math.random() * 6) + 1;
     this.total += randNumber;
@@ -26,20 +40,7 @@ Turn.prototype.diceRolling = function(player1, player2) {
     };
 };
 
-Turn.prototype.endTurn = function(player1, player2) {
-    this.player.score += this.total;
-    this.total = 0;
-    this.randNumber = 0;
-    if (this.player == player1) {
-        this.player = player2;
-        $("#player2").toggleClass("active");
-        $("#player1").toggleClass("active");
-    } else if (this.player == player2) {
-        this.player = player1;
-        $("#player2").toggleClass("active");
-        $("#player1").toggleClass("active");
-    };
-};
+
 
 
 
