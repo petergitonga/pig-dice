@@ -11,18 +11,18 @@ function Turn(player) {
     this.player = player;
 };
 
-Turn.prototype.endTurn = function(player1, player2) {
+Turn.prototype.endSpin = function(player1, player2) {
     this.player.score += this.total;
     this.total = 0;
     this.randNumber = 0;
     if (this.player == player1) {
         this.player = player2;
-        $("#player2").toggleClass("active");
-        $("#player1").toggleClass("active");
+        $("#player2").toggleClass("moulting");
+        $("#player1").toggleClass("moulting");
     } else if (this.player == player2) {
         this.player = player1;
-        $("#player2").toggleClass("active");
-        $("#player1").toggleClass("active");
+        $("#player2").toggleClass("moulting");
+        $("#player1").toggleClass("moulting");
     };
 };
 Turn.prototype.diceRolling = function(player1, player2) {
@@ -31,7 +31,7 @@ Turn.prototype.diceRolling = function(player1, player2) {
 
     if (randNumber == 1) {
         this.total = 0;
-        this.endTurn(player1, player2);
+        this.endSpin(player1, player2);
 
         return randNumber;
     } else {
@@ -62,7 +62,7 @@ $(document).ready(function() {
     $('#plyer2').text(player2.score);
 
     //gives current Player
-    $('#current_player').text(currentTurn.player.userName);
+    // $('#current_player').text(currentTurn.player.userName);
 
     //This code runs when you click the spin button
     $("form#rolls").submit(function(event) {
@@ -93,7 +93,7 @@ $(document).ready(function() {
     $("form#end").submit(function(event) {
         event.preventDefault();
 
-        currentTurn.endTurn(player1, player2);
+        currentTurn.endSpin(player1, player2);
 
         //gives current Player
         $('#current_player').text(currentTurn.player.userName);

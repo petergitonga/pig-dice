@@ -49,3 +49,7 @@ h1{
   background-repeat: no-repeat;
   background-size:cover;
 }
+.moulting{
+  color: red;
+  font-size: 48px;
+}
